@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="css/main.css">
+        <title>CHOCRAUX Corentin • Développeur</title>
+    </head>
+
+    <body>
+        <div class="page">
+            <aside class="sidebar" aria-label="Navigation">
+            <a class="avatar" href="#">
+                <img src="images/imageProfil.jpg" alt="Avatar">
+            </a>
+
+            <div class="name">
+                <h1>CHOCRAUX Corentin</h1>
+                <p>Développeur • Lille / Distance</p>
+            </div>
+
+            <nav class="nav" aria-label="Sections">
+                <a href="#parcours">Parcours</a>
+                <a href="#competences">Compétences</a>
+                <a href="#travaux">Travaux</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            </aside>
+
+            <main>
+                <section class="perso" id="top">
+                    <div class="perso-gauche">
+                        <div class="title">Développeur passionné par la création de solutions robustes et scalables.</div>
+                        <div class="subtitle">Java · Web · C — Je sais m'adapter à différents projets dans des langages que je le connaisse ou pas.</div>
+
+                        <div class="cta-row">
+                            <button class="btn" onclick="scrollToSection('travaux')">Voir mes travaux</button>
+                            <button class="btn" onclick="scrollToSection('contact')">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="perso-visual" aria-hidden="true">
+                        <button class="downloadCV" onclick="telechargerCV()"> Télécharger mon CV en version PDF</button>
+                    </div>
+                </section>
+
+                <section id="parcours" style="margin-top:18px">
+                    <h2>Parcours</h2>
+                    <div class="css_Articles">
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/BUTinfo.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>BUT Informatique</h3>
+                            <p>BUT1 - 36ème sur 130</p>
+                            <p>BUT2 - en cours</p>
+                        </article>
+                        
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/LyceeRaymondQueneau.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Baccalauréat Général</h3>
+                            <p>Spécialité Mathématiques</p>
+                            <p>Spécialité Numérique et Sciences Informatiques</p>
+                            <p>Option Mathématiques Expertes</p>
+                            <p>Mention Bien</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="competences" style="margin-top:18px">
+                    <h2>Compétences</h2>
+                    <div class="css_Articles">
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/Java.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Développement en Java</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet1')">Jeu ludo-pédagogique</button>
+                            <button class="btn" onclick="scrollToSection('projet5')">Exploration algorithmique</button>
+                            <button class="btn" onclick="scrollToSection('projet8')">Jeu basé sur la découverte de la méthode Agile</button>
+                            <button class="btn" onclick="scrollToSection('projet9')">Jeu de parcours et de création de labyrinthe</button>
+                        </article>
+
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/HTML_CSS.webp" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Développement en HTML/CSS</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet4')">Plateforme de covoiturage en ligne</button>
+                        </article>
+
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/Agile.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Connaissance de la méthode de travail Agile</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet8')">Jeu basé sur la découverte de la méthode Agile</button>
+                        </article>
+                    </div>
+                    <div class="css_Articles">
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/reseau.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Réseaux, instalations et configurations de machines</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet2')">Installation d'une machine virtuelle</button>
+                        </article>
+
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/imageBDD.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Bases de données POSTGRESQL et Access</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet3')">Introduction aux bases de données</button>
+                            <button class="btn" onclick="scrollToSection('projet5')">Exploration algorithmique</button>
+                        </article>
+
+                        <article>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="travaux" style="margin-top:18px">
+                    <h2 style="font-size:20px;margin-bottom:12px">Projets récents</h2>
+                    <div class="css_Articles">
+                        <article id="projet1" class="css_Article">
+                            <div class="thumb"><img src="images/jeuLudo.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Jeu ludo-pédagogique</h3>
+                            <p>
+                                L'objectif de ce projet était de réaliser un jeu ludo-pédagogique en IJava, qui est une version simplifiée
+                                de Java. Ce jeu était destiné à un public de primaire. Il fallait pour cela réfléchir à l'idée du jeu,
+                                son principe, son fonctionnement, ainsi que comment on pourrait rendre ce jeu attractif pour le public visé.
+                                Pour cela, nous avons commencé par réaliser le côté fonctionnel du jeu, puis nous sommes passés à l'aspect
+                                visuel avec les actions possibles que nous avons décidé de rajouter. Le jeu que nous avons choisi de faire
+                                est un jeu où les deux joueurs jouent chacun leur tour et choisissent une action facile ou difficile, puis
+                                répondent à une question qui doit être réussie pour que l'action s'effectue.
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet2" class="css_Article">
+                            <div class="thumb"><img src="images/machineVirtuelle.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Installation d'une machine virtuelle</h3>
+                            <p>
+                                L'objectif de ce projet était d'installer une machine virtuelle Linux et de comprendre le bon fonctionnement
+                                d'Oracle VM VirtualBox, ainsi que les différents paramètres et documents requis pour la bonne configuration
+                                de la VM. Ce projet visait aussi à nous faire comprendre les éléments essentiels à l'installation correcte de
+                                Linux, pour pouvoir ensuite reproduire l'environnement chez nous et ainsi avoir accès à un système Linux
+                                personnel à domicile. 
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet3" class="css_Article">
+                            <div class="thumb"><img src="images/BDD.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Introduction aux bases de données</h3>
+                            <p>
+                                Ce projet nous demandait, dans un premier temps, de réaliser une base de données sur Access pour une entreprise
+                                tirée au sort. Avec mon coéquipier, nous avons tiré la "banque en ligne". Nous avons ensuite dû gérer les
+                                relations entre les différentes tables de la base. Il fallait également créer, toujours sous Access, des
+                                formulaires permettant l'ajout, la suppression, l'affichage ainsi que l'accès à ces différentes fonctionnalités.
+                                Lors du second semestre, nous avons dû rédiger des requêtes SQL permettant l'importation et la création de tables.
+                                Enfin, nous avons rédigé un rapport final sur l'ensemble du projet.
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+                    </div>
+                    <div class="css_Articles">
+                        <article id="projet4" class="css_Article">
+                            <div class="thumb"><img src="images/covoiturage.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Plateforme de covoiturage en ligne</h3>
+                            <p>
+                                Dans ce projet, nous devions, en binôme, réaliser un site web sur l'entreprise de notre choix, mettant
+                                en avant les actions d'éco-mobilité mises en place. Nous avons commencé par créer une maquette du site
+                                sur QuickMockup afin de tester différents visuels et choisir celui que nous préférions. Cette étape
+                                nous a permis d'avoir une direction claire pour le développement du site et de savoir quelles fonctionnalités
+                                il faudrait apprendre à implémenter (liens cliquables, formulaires, etc.), notamment pour la création de
+                                formulaires d'inscription ou de pages de connexion. 
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet5" class="css_Article">
+                            <div class="thumb"><img src="images/appliJava.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Exploration algorithmique</h3>
+                            <p>
+                                Ce projet s'est déroulé en trinôme. Nous devions réaliser une application permettant de gérer des séjours
+                                linguistiques entre plusieurs établissements. Pour cela, il fallait d'abord créer les classes nécessaires
+                                au bon fonctionnement de l'application (partie Java), puis concevoir l'interface graphique permettant d'utiliser
+                                ces classes et leurs fonctions (partie JavaFX). L'interface a d'abord été maquettée sur Figma, puis réalisée
+                                et testée via SceneBuilder, en utilisant le format FXML pour intégrer les éléments visuels à JavaFX. 
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet6" class="css_Article">
+                            <div class="thumb"><img src="images/accueilProjet.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Gestion de projet</h3>
+                            <p>
+                                Ce projet s'est déroulé en groupe de quatre. L'objectif était de simuler la création d'une entreprise. Nous avons
+                                imaginé une entreprise nommée DealHunt, permettant aux utilisateurs de publier et consulter des bons plans. Le
+                                projet était divisé en plusieurs parties, à réaliser chaque semaine. Contrairement aux autres SAE, ce travail
+                                se faisait uniquement pendant les heures de cours dédiées, ce qui impliquait une organisation différente et un
+                                respect rigoureux du calendrier hebdomadaire. 
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+                    </div>
+                    <div class="css_Articles">
+                        <article id="projet7" class="css_Article">
+                            <div class="thumb"><img src="images/imageVideo.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Travail en équipe (vidéo de vulgarisation scientifique sur un point de science informatique)</h3>
+                            <p>
+                                Ce projet s'est déroulé en groupe de 2 à 4 personnes. L'objectif était de réaliser une vidéo de vulgarisation
+                                sur un thème lié à l'informatique, un événement ou une personnalité marquante. Avec mon partenaire, nous avons
+                                choisi de traiter les débuts de la 3D dans le jeu vidéo. Nous avons d'abord effectué des recherches sur le
+                                sujet, puis rédigé un premier script. Ensuite, nous avons réfléchi à la manière de rendre la vidéo dynamique
+                                et concise, en respectant une durée maximale de 6 minutes. Enfin, nous avons enregistré notre voix et réalisé
+                                le montage pour produire la vidéo finale.
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet8" class="css_Article">
+                            <div class="thumb"><img src="images/image.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Jeu basé sur la découverte de la méthode Agile</h3>
+                            <p>
+                                info
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+
+                        <article id="projet9" class="css_Article">
+                            <div class="thumb"><img src="images/image.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Jeu de parcours et de création de labyrinthe</h3>
+                            <p>
+                                info
+                            </p>
+                            <button class="btn" style="float: right; margin-top: 10px;">En savoir plus</button>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="a-propos" style="margin-top:22px">
+                    <h2 style="font-size:20px;margin-bottom:12px">À propos</h2>
+                    <p style="color:var(--muted);max-width:70ch">Java, le développement web (HTML, CSS, JavaScript) et d'autres technologies selon les besoins du projet. Mon approche combine rigueur technique et attention aux détails pour livrer des applications performantes et maintenables. J'aime relever des défis complexes et collaborer avec des équipes pour transformer des idées en produits utiles.</p>
+                </section>
+
+                <section id="contact" class="contact">
+                    <div>📬 <strong>Email :</strong> corentin.choc@gmail.com</div>
+                    <div>— <small style="color:var(--muted)">© <span id="year"></span> CHOCRAUX Corentin</small></div>
+                </section>
+            </main>
+        </div>
+
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            function scrollToSection(id){
+                const el = document.getElementById(id);
+                if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+            }
+            function telechargerCV() {
+                window.open('https://drive.google.com/file/d/1hFmcAXdnyfZaTOOTJbugLpVO9QWDTTd_/view?usp=sharing', '_blank');
+            }
+        </script>
+    </body>
+</html>
