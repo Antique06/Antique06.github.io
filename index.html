@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="perso-visual" aria-hidden="true">
-                        <button class="downloadCV" onclick="telechargerCV()"> Télécharger mon CV en version PDF</button>
+                        <button class="downloadCV" onclick="telechargerCV()">Télécharger mon CV en version PDF</button>
                     </div>
                 </section>
 
@@ -114,7 +114,7 @@
                 <section id="travaux" style="margin-top:18px">
                     <h2 style="font-size:20px;margin-bottom:12px">Projets récents</h2>
                     <div class="css_Articles">
-                        <article id="projet1" class="css_Article">
+                        <article id="projet1" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Java / IJava (conception orientée objet)</li><li>Interface graphique et gestion d'images/événements</li><li>Maquettage et itérations visuelles</li></ul><strong>Mes points forts</strong><ul><li>Travail en équipe</li><li>Respect des délais</li><li>Renforcement de la logique algorithmique</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Documentation limitée pour IJava</li><li>Configurer IJava en local</li></ul><strong>Mes points à améliorer</strong><ul><li>Mieux répartir les tâches</li><li>Ajouter plus de documentation</li><li>Élargir les tests</li></ul><strong>Conclusion</strong><p>Projet globalement réussi : jeu fonctionnel et pédagogique, expérience formatrice sur Java et conception de jeux.</p>">
                             <div class="thumb"><img src="images/jeuLudo.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Jeu ludo-pédagogique</h3>
                             <p>
@@ -124,11 +124,11 @@
                             <button class="btn btn-more" onclick="openModal('projet1',
                                                                    'Jeu ludo-pédagogique',
                                                                    'images/jeuLudo.png',
-                                                                   'L\'objectif de ce projet était de réaliser un jeu ludo-pédagogique en IJava, qui est une version simplifiée de Java. Ce jeu était destiné à un public de primaire. Il fallait pour cela réfléchir à l\'idée du jeu, son principe, son fonctionnement, ainsi que comment on pourrait rendre ce jeu attractif pour le public visé. Pour cela, nous avons commencé par réaliser le côté fonctionnel du jeu, puis nous sommes passés à l\'aspect visuel avec les actions possibles que nous avons décidé de rajouter. Le jeu que nous avons choisi de faire est un jeu où les deux joueurs jouent chacun leur tour et choisissent une action facile ou difficile, puis répondent à une question qui doit être réussie pour que l\'action s\'effectue.', '<strong>Compétences</strong> Java, IJava, Interface graphique, Conception de jeu.\n\n<strong>Objectifs pédagogiques</strong> Développer la pensée algorithmique, Créer une interface ludique, Savoir s\'adapter à une clientèle visé.\n\n<strong>Points forts</strong> Travailler en équipe, Gérer le temps, Introduction à Java.\n\n<strong>Points faibles</strong> Répartition du travail, Trouver de la documentation.\n\n<strong>Résultat</strong> Jeu fonctionnel et attractif pour les enfants de primaire.')"
-                                                                   >En savoir plus</button>
+                                                                   'L\'objectif de ce projet était de réaliser un jeu ludo-pédagogique en IJava, qui est une version simplifiée de Java. Ce jeu était destiné à un public de primaire. Il fallait pour cela réfléchir à l\'idée du jeu, son principe, son fonctionnement, ainsi que comment on pourrait rendre ce jeu attractif pour le public visé. Pour cela, nous avons commencé par réaliser le côté fonctionnel du jeu, puis nous sommes passés à l\'aspect visuel avec les actions possibles que nous avons décidé de rajouter. Le jeu que nous avons choisi de faire est un jeu où les deux joueurs jouent chacun leur tour et choisissent une action facile ou difficile, puis répondent à une question qui doit être réussie pour que l\'action s\'effectue.', document.getElementById('projet1').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet2" class="css_Article">
+                        <article id="projet2" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Utiliser Oracle VM VirtualBox</li><li>Installation système Linux, partitionnement et gestion du disque</li><li>Administration système et réseau de base</li></ul><strong>Mes points forts</strong><ul><li>Compréhension pratique de VirtualBox</li><li>Création et configuration d'une VM Linux</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Choix d'options d'installation incorrectes</li><li>Paramétrage de l'espace disque</li></ul><strong>Mes points à améliorer</strong><ul><li>Meilleure préparation des paramètres d'installation</li><li>Rédiger une checklist d'installation</li></ul><strong>Conclusion</strong><p>Environnement Linux opérationnel et meilleure compréhension des processus d'installation et maintenance.</p>">
                             <div class="thumb"><img src="images/machineVirtuelle.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Installation d'une machine virtuelle</h3>
                             <p>
@@ -139,11 +139,11 @@
                             <button class="btn btn-more" onclick="openModal('projet2',
                                                                    'Installation d\'une machine virtuelle',
                                                                    'images/machineVirtuelle.png',
-                                                                   'L\'objectif de ce projet était d\'installer une machine virtuelle Linux et de comprendre le bon fonctionnement d\'Oracle VM VirtualBox, ainsi que les différents paramètres et documents requis pour la bonne configuration de la VM. Ce projet visait aussi à nous faire comprendre les éléments essentiels à l\'installation correcte de Linux, pour pouvoir ensuite reproduire l\'environnement chez nous et ainsi avoir accès à un système Linux personnel à domicile.', 'Compétences : Oracle VM VirtualBox, Linux, Configuration système, Administration réseau.\n\nTâches réalisées : Installation et configuration d\'une machine virtuelle, Apprentissage de Linux, Documentation du processus.\n\nRésultat : Machine virtuelle Linux fonctionnelle et bien configurée.')"
-                                                                   >En savoir plus</button>
+                                                                   'L\'objectif de ce projet était d\'installer une machine virtuelle Linux et de comprendre le bon fonctionnement d\'Oracle VM VirtualBox, ainsi que les différents paramètres et documents requis pour la bonne configuration de la VM. Ce projet visait aussi à nous faire comprendre les éléments essentiels à l\'installation correcte de Linux, pour pouvoir ensuite reproduire l\'environnement chez nous et ainsi avoir accès à un système Linux personnel à domicile.', document.getElementById('projet2').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet3" class="css_Article">
+                        <article id="projet3" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Access (conception et formulaires)</li><li>SQL (requêtes d'importation et création)</li><li>Rédaction de documentation technique</li></ul><strong>Mes points forts</strong><ul><li>Organisation des données et relations</li><li>Mise en place de formulaires fonctionnels</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Accès aux outils (Access requis)</li><li>Maîtrise du SQL plus approfondie nécessaire</li></ul><strong>Mes points à améliorer</strong><ul><li>Améliorer l'ergonomie des formulaires</li><li>Optimiser les requêtes et index</li></ul><strong>Conclusion</strong><p>Base de données finalisée avec rapport; compétence renforcée en SQL et modélisation.</p>">
                             <div class="thumb"><img src="images/BDD.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Introduction aux bases de données</h3>
                             <p>
@@ -153,12 +153,12 @@
                             <button class="btn btn-more" onclick="openModal('projet3',
                                                                    'Introduction aux bases de données',
                                                                    'images/BDD.png',
-                                                                   'Ce projet nous demandait, dans un premier temps, de réaliser une base de données sur Access pour une entreprise tirée au sort. Avec mon coéquipier, nous avons tiré la &quot;banque en ligne&quot;. Nous avons ensuite dû gérer les relations entre les différentes tables de la base. Il fallait également créer, toujours sous Access, des formulaires permettant l\'ajout, la suppression, l\'affichage ainsi que l\'accès à ces différentes fonctionnalités. Lors du second semestre, nous avons dû rédiger des requêtes SQL permettant l\'importation et la création de tables. Enfin, nous avons rédigé un rapport final sur l\'ensemble du projet.', 'Compétences : Access, SQL, PostgreSQL, Conception de base de données.\n\nTâches réalisées : Création de tables et relations, Formulaires Access, Requêtes SQL complexes.\n\nRésultat : Base de données complète et fonctionnelle avec documentation.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet nous demandait, dans un premier temps, de réaliser une base de données sur Access pour une entreprise tirée au sort. Avec mon coéquipier, nous avons tiré la \'banque en ligne\'. Nous avons ensuite dû gérer les relations entre les différentes tables de la base. Il fallait également créer, toujours sous Access, des formulaires permettant l\'ajout, la suppression, l\'affichage ainsi que l\'accès à ces différentes fonctionnalités. Lors du second semestre, nous avons dû rédiger des requêtes SQL permettant l\'importation et la création de tables. Enfin, nous avons rédigé un rapport final sur l\'ensemble du projet.', document.getElementById('projet3').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
                     </div>
                     <div class="css_Articles">
-                        <article id="projet4" class="css_Article">
+                        <article id="projet4" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>HTML &amp; CSS</li><li>UX / Maquettage (QuickMockup)</li><li>Formulaires et pages de connexion</li></ul><strong>Mes points forts</strong><ul><li>Maquettage et prototypage</li><li>Développement front-end</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Gestion du visuel et cohérence graphique</li></ul><strong>Mes points à améliorer</strong><ul><li>Soigner davantage le rendu visuel</li><li>Améliorer l'accessibilité</li></ul><strong>Conclusion</strong><p>Site complet et responsive, livrable conforme au cahier des charges.</p>">
                             <div class="thumb"><img src="images/covoiturage.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Plateforme de covoiturage en ligne</h3>
                             <p>
@@ -168,11 +168,11 @@
                             <button class="btn btn-more" onclick="openModal('projet4',
                                                                    'Plateforme de covoiturage en ligne',
                                                                    'images/covoiturage.png',
-                                                                   'Dans ce projet, nous devions, en binôme, réaliser un site web sur l\'entreprise de notre choix, mettant en avant les actions d\'éco-mobilité mises en place. Nous avons commencé par créer une maquette du site sur QuickMockup afin de tester différents visuels et choisir celui que nous préférions. Cette étape nous a permis d\'avoir une direction claire pour le développement du site et de savoir quelles fonctionnalités il faudrait apprendre à implémenter (liens cliquables, formulaires, etc.), notamment pour la création de formulaires d\'inscription ou de pages de connexion.', 'Compétences : HTML, CSS, Design UX/UI, QuickMockup.\n\nTâches réalisées : Maquettage du site, Développement HTML/CSS, Création de formulaires et pages de connexion.\n\nRésultat : Site web complet et responsive avec thème éco-mobilité.')"
-                                                                   >En savoir plus</button>
+                                                                   'Dans  ce projet, nous devions, en binôme, réaliser un site web sur l\'entreprise de notre choix, mettant en avant les actions d\'éco-mobilité mises en place. Nous avons commencé par créer une maquette du site sur QuickMockup afin de tester différents visuels et choisir celui que nous préférions. Cette étape nous a permis d\'avoir une direction claire pour le développement du site et de savoir quelles fonctionnalités il faudrait apprendre à implémenter (liens cliquables, formulaires, etc.), notamment pour la création de formulaires d\'inscription ou de pages de connexion. ', document.getElementById('projet4').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet5" class="css_Article">
+                        <article id="projet5" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Java / POO</li><li>JavaFX &amp; FXML</li><li>Maquettage (Figma) et SceneBuilder</li></ul><strong>Mes points forts</strong><ul><li>Architecture Java</li><li>Conception d'interface</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Intégration logique / interface</li></ul><strong>Mes points à améliorer</strong><ul><li>Tests et documentation</li></ul><strong>Conclusion</strong><p>Application complète et fonctionnelle, apprentissages renforcés en Java/GUI.</p>">
                             <div class="thumb"><img src="images/appliJava.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Exploration algorithmique</h3>
                             <p>
@@ -182,11 +182,11 @@
                             <button class="btn btn-more" onclick="openModal('projet5',
                                                                    'Exploration algorithmique',
                                                                    'images/appliJava.png',
-                                                                   'Ce projet s\'est déroulé en trinôme. Nous devions réaliser une application permettant de gérer des séjours linguistiques entre plusieurs établissements. Pour cela, il fallait d\'abord créer les classes nécessaires au bon fonctionnement de l\'application (partie Java), puis concevoir l\'interface graphique permettant d\'utiliser ces classes et leurs fonctions (partie JavaFX). L\'interface a d\'abord été maquettée sur Figma, puis réalisée et testée via SceneBuilder, en utilisant le format FXML pour intégrer les éléments visuels à JavaFX.', 'Compétences : Java, JavaFX, Figma, SceneBuilder, FXML, Programmation orientée objet.\n\nTâches réalisées : Architecture et développement Java, Conception d\'interface graphique JavaFX, Maquettage Figma.\n\nRésultat : Application complète de gestion de séjours linguistiques.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet s\'est déroulé en trinôme. Nous devions réaliser une application permettant de gérer des séjours linguistiques entre plusieurs établissements. Pour cela, il fallait d\'abord créer les classes nécessaires au bon fonctionnement de l\'application (partie Java), puis concevoir l\'interface graphique permettant d\'utiliser ces classes et leurs fonctions (partie JavaFX). L\'interface a d\'abord été maquettée sur Figma, puis réalisée et testée via SceneBuilder, en utilisant le format FXML pour intégrer les éléments visuels à JavaFX. ', document.getElementById('projet5').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet6" class="css_Article">
+                        <article id="projet6" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Gestion de projet</li><li>Planification &amp; sprints</li><li>Coordination d'équipe</li></ul><strong>Mes points forts</strong><ul><li>Organisation</li><li>Respect des délais</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Coordination de plusieurs livrables</li></ul><strong>Mes points à améliorer</strong><ul><li>Documentation des décisions</li><li>Répartition claire des tâches</li></ul><strong>Conclusion</strong><p>Projet management réussi; expérience forte en coordination et planning.</p>">
                             <div class="thumb"><img src="images/accueilProjet.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Gestion de projet</h3>
                             <p>
@@ -195,12 +195,12 @@
                             <button class="btn btn-more" onclick="openModal('projet6',
                                                                    'Gestion de projet',
                                                                    'images/accueilProjet.png',
-                                                                   'Ce projet s\'est déroulé en groupe de quatre. L\'objectif était de simuler la création d\'une entreprise. Nous avons imaginé une entreprise nommée DealHunt, permettant aux utilisateurs de publier et consulter des bons plans. Le projet était divisé en plusieurs parties, à réaliser chaque semaine. Contrairement aux autres SAE, ce travail se faisait uniquement pendant les heures de cours dédiées, ce qui impliquait une organisation différente et un respect rigoureux du calendrier hebdomadaire.', 'Compétences : Gestion de projet, Travail en équipe, Planification, Méthode Agile.\n\nTâches réalisées : Conception d\'une application de bons plans (DealHunt), Développement par sprints, Gestion d\'équipe.\n\nRésultat : Application DealHunt fonctionnelle et bien documentée.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet s\'est déroulé en groupe de quatre. L\'objectif était de simuler la création d\'une entreprise. Nous avons imaginé une entreprise nommée DealHunt, permettant aux utilisateurs de publier et consulter des bons plans. Le projet était divisé en plusieurs parties, à réaliser chaque semaine. Contrairement aux autres SAE, ce travail se faisait uniquement pendant les heures de cours dédiées, ce qui impliquait une organisation différente et un respect rigoureux du calendrier hebdomadaire.', document.getElementById('projet6').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
                     </div>
                     <div class="css_Articles">
-                        <article id="projet7" class="css_Article">
+                        <article id="projet7" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Recherche et synthèse</li><li>Scriptwriting et montage vidéo</li><li>Storytelling pédagogique</li></ul><strong>Mes points forts</strong><ul><li>Recherche et structuration</li><li>Qualité du montage</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Limiter le contenu pour la durée</li><li>Qualité de la prise audio</li></ul><strong>Mes points à améliorer</strong><ul><li>Meilleure préparation des sources audio</li><li>Sélection d'extraits pertinents</li></ul><strong>Conclusion</strong><p>Vidéo pédagogique et dynamique, résultat positif et formateur.</p>">
                             <div class="thumb"><img src="images/imageVideo.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Travail en équipe (vidéo de vulgarisation scientifique sur un point de science informatique)</h3>
                             <p>
@@ -210,11 +210,11 @@
                             <button class="btn btn-more" onclick="openModal('projet7',
                                                                    'Vulgarisation scientifique - 3D au cinéma',
                                                                    'images/imageVideo.png',
-                                                                   'Ce projet s\'est déroulé en groupe de 2 à 4 personnes. L\'objectif était de réaliser une vidéo de vulgarisation sur un thème lié à l\'informatique. Avec mon partenaire, nous avons choisi de traiter les débuts de la 3D dans le jeu vidéo. Nous avons d\'abord effectué des recherches sur le sujet, puis rédigé un premier script. Ensuite, nous avons réfléchi à la manière de rendre la vidéo dynamique et concise, en respectant une durée maximale de 6 minutes. Enfin, nous avons enregistré notre voix et réalisé le montage pour produire la vidéo finale.', 'Compétences : Recherche scientifique, Vulgarisation, Production vidéo, Montage, Storytelling.\n\nTâches réalisées : Recherche sur l\'histoire de la 3D au cinéma, Rédaction de script, Enregistrement vocal, Montage vidéo.\n\nRésultat : Vidéo de vulgarisation de 6 minutes sur la 3D dans le jeu vidéo.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet s\'est déroulé en groupe de 2 à 4 personnes. L\'objectif était de réaliser une vidéo de vulgarisation sur un thème lié à l\'informatique, un événement ou une personnalité marquante. Avec mon partenaire, nous avons choisi de traiter les débuts de la 3D dans le jeu vidéo. Nous avons d\'abord effectué des recherches sur le sujet, puis rédigé un premier script. Ensuite, nous avons réfléchi à la manière de rendre la vidéo dynamique et concise, en respectant une durée maximale de 6 minutes. Enfin, nous avons enregistré notre voix et réalisé le montage pour produire la vidéo finale.', document.getElementById('projet7').dataset.details)">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet8" class="css_Article">
+                        <article id="projet8" class="css_Article projet">
                             <div class="thumb"><img src="images/image.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Jeu basé sur la découverte de la méthode Agile</h3>
                             <p>
@@ -223,11 +223,11 @@
                             <button class="btn btn-more" onclick="openModal('projet8',
                                                                    'Jeu basé sur la découverte de la méthode Agile',
                                                                    'images/image.png',
-                                                                   'Ce projet consiste à développer un jeu qui permet de découvrir et d\'apprendre les principes de la méthode Agile de manière ludique et interactive.', 'Compétences : Java, Programmation orientée objet, Conception de jeu, Méthodologie Agile.\n\nObjectifs : Enseigner les principes Agile à travers le jeu, Favoriser l\'apprentissage collaboratif.\n\nRésultat : Jeu éducatif et engageant.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet consiste à développer un jeu qui permet de découvrir et d\'apprendre les principes de la méthode Agile de manière ludique et interactive.', 'Compétences : Java, Programmation orientée objet, Conception de jeu, Méthodologie Agile.\n\nObjectifs : Enseigner les principes Agile à travers le jeu, Favoriser l\'apprentissage collaboratif.\n\nRésultat : Jeu éducatif et engageant.')">
+                                                                   En savoir plus</button>
                         </article>
 
-                        <article id="projet9" class="css_Article">
+                        <article id="projet9" class="css_Article projet">
                             <div class="thumb"><img src="images/image.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Jeu de parcours et de création de labyrinthe</h3>
                             <p>
@@ -236,8 +236,8 @@
                             <button class="btn btn-more" onclick="openModal('projet9',
                                                                    'Jeu de parcours et de création de labyrinthe',
                                                                    'images/image.png',
-                                                                   'Ce projet consiste à développer un jeu permettant aux joueurs de parcourir des labyrinthes et d\'en créer de nouveaux, offrant une expérience interactive et créative.', 'Compétences : Java, Algorithmes de génération de labyrinthe, Interface graphique, Programmation en temps réel.\n\nFonctionnalités : Parcours de labyrinthes, Éditeur de labyrinthes, Système de niveaux.\n\nRésultat : Jeu complet avec générateur et visualiseur de labyrinthes.')"
-                                                                   >En savoir plus</button>
+                                                                   'Ce projet consiste à développer un jeu permettant aux joueurs de parcourir des labyrinthes et d\'en créer de nouveaux, offrant une expérience interactive et créative.', 'Compétences : Java, Algorithmes de génération de labyrinthe, Interface graphique, Programmation en temps réel.\n\nFonctionnalités : Parcours de labyrinthes, Éditeur de labyrinthes, Système de niveaux.\n\nRésultat : Jeu complet avec générateur et visualiseur de labyrinthes.')">
+                                                                   En savoir plus</button>
                         </article>
                     </div>
                 </section>
@@ -280,12 +280,20 @@
                 document.getElementById('modalTitle').textContent = title;
                 document.getElementById('modalImage').src = image;
                 document.getElementById('modalDescription').textContent = description;
-                // Turn blank-line-separated chunks into <p> paragraphs — keep single line breaks as <br>
-                const paragraphs = details
-                    .split(/\n\s*\n/) // split at blank lines
-                    .map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>')
-                    .join('');
-                document.getElementById('modalDetails').innerHTML = paragraphs;
+                    const detailsEl = document.getElementById('modalDetails');
+                    if (typeof details === 'string' && /&lt;/.test(details)) {
+                        const tmp = document.createElement('div');
+                        const decoded = tmp.textContent || tmp.innerText || '';
+                        detailsEl.innerHTML = decoded;
+                    } else if (typeof details === 'string' && /<[^>]+>/.test(details)) {
+                        detailsEl.innerHTML = details;
+                } else {
+                    const paragraphs = String(details || '')
+                        .split(/\n\s*\n/)
+                        .map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>')
+                        .join('');
+                    detailsEl.innerHTML = paragraphs;
+                }
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }
