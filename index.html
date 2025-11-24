@@ -124,7 +124,7 @@
                             <button class="btn btn-more" onclick="openModal('projet1',
                                                                    'Jeu ludo-pédagogique',
                                                                    'images/jeuLudo.png',
-                                                                   'L\'objectif de ce projet était de réaliser un jeu ludo-pédagogique en IJava, qui est une version simplifiée de Java. Ce jeu était destiné à un public de primaire. Il fallait pour cela réfléchir à l\'idée du jeu, son principe, son fonctionnement, ainsi que comment on pourrait rendre ce jeu attractif pour le public visé. Pour cela, nous avons commencé par réaliser le côté fonctionnel du jeu, puis nous sommes passés à l\'aspect visuel avec les actions possibles que nous avons décidé de rajouter. Le jeu que nous avons choisi de faire est un jeu où les deux joueurs jouent chacun leur tour et choisissent une action facile ou difficile, puis répondent à une question qui doit être réussie pour que l\'action s\'effectue.', 'Compétences : Java, IJava, Interface graphique, Conception de jeu.\n\nObjectifs pédagogiques : Développer la pensée algorithmique, Créer une interface ludique.\n\nRésultat : Jeu fonctionnel et attractif pour les enfants de primaire.')"
+                                                                   'L\'objectif de ce projet était de réaliser un jeu ludo-pédagogique en IJava, qui est une version simplifiée de Java. Ce jeu était destiné à un public de primaire. Il fallait pour cela réfléchir à l\'idée du jeu, son principe, son fonctionnement, ainsi que comment on pourrait rendre ce jeu attractif pour le public visé. Pour cela, nous avons commencé par réaliser le côté fonctionnel du jeu, puis nous sommes passés à l\'aspect visuel avec les actions possibles que nous avons décidé de rajouter. Le jeu que nous avons choisi de faire est un jeu où les deux joueurs jouent chacun leur tour et choisissent une action facile ou difficile, puis répondent à une question qui doit être réussie pour que l\'action s\'effectue.', '<strong>Compétences</strong> Java, IJava, Interface graphique, Conception de jeu.\n\n<strong>Objectifs pédagogiques</strong> Développer la pensée algorithmique, Créer une interface ludique, Savoir s\'adapter à une clientèle visé.\n\n<strong>Points forts</strong> Travailler en équipe, Gérer le temps, Introduction à Java.\n\n<strong>Points faibles</strong> Répartition du travail, Trouver de la documentation.\n\n<strong>Résultat</strong> Jeu fonctionnel et attractif pour les enfants de primaire.')"
                                                                    >En savoir plus</button>
                         </article>
 
@@ -285,7 +285,7 @@
                     .split(/\n\s*\n/) // split at blank lines
                     .map(p => '<p>' + p.replace(/\n/g, '<br>') + '</p>')
                     .join('');
-                document.getElementById('modalDetails').innerHTML = '<strong>Détails du projet :</strong>' + paragraphs;
+                document.getElementById('modalDetails').innerHTML = paragraphs;
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }
