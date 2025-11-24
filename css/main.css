@@ -185,6 +185,8 @@ main{
 
 .css_Article{
     padding:16px;
+    position: relative; /* allow absolutely-positioned children */
+    padding-bottom: 64px; /* leave room for the bottom-right button */
     border-radius:12px;
     background: rgba(255,255,255,0.02);
     border:1px solid rgba(255,255,255,0.03);
@@ -212,6 +214,22 @@ section h2 {
 .css_Article h3{font-size:16px;margin-bottom:6px}
 
 .css_Article p{color:var(--muted);font-size:13px;margin-top:3px;}
+
+/* specific styling for project "En savoir plus" button (keeps it bottom-right) */
+.btn-more{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 5;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(125,211,252,0.15);
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn-more:hover{transform: translateY(-3px); background: rgba(125,211,252,0.03)}
 
 .contact{
     margin-top:28px;
@@ -339,18 +357,16 @@ section h2 {
     margin-bottom: 12px;
 }
 
-.modal-details pre {
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    line-height: 1.5;
+.modal-details p {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.6;
     color: var(--muted);
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    border-radius: 6px;
-    overflow-x: auto;
+    margin: 0 0 12px;
+    text-align: left;
 }
+
+.modal-details p:last-child{margin-bottom:0}
 
 @media (max-width:880px){
     .page{grid-template-columns: 1fr; padding:24px}
@@ -376,4 +392,8 @@ section h2 {
     .modal-body h2 {
         font-size: 24px;
     }
+
+    /* mobile: keep the 'En savoir plus' button inline rather than absolute */
+    .css_Article{padding-bottom:16px}
+    .btn-more{position:static; float:right; margin-top:10px}
 }
