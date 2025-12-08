@@ -36,6 +36,10 @@ body{
     line-height:1.3;
 }
 
+p {
+    text-justify: inter-word;
+}
+
 .page {
     min-height:100vh;
     display:grid;
