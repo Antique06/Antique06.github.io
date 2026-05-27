@@ -47,6 +47,13 @@
                     <h2>Parcours</h2>
                     <div class="css_Articles">
                         <article class="css_Article">
+                            <div class="thumb"><img src="images/proges-plus.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Stage - Proges Plus</h3>
+                            <p>Mai - Juin 2026</p>
+                            <p>Durée : 2 mois</p>
+                        </article>
+
+                        <article class="css_Article">
                             <div class="thumb"><img src="images/BUTinfo.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>BUT Informatique</h3>
                             <p>BUT1 - 36ème sur 130</p>
@@ -106,7 +113,18 @@
                             <button class="btn" onclick="scrollToSection('projet5')">Exploration algorithmique</button>
                         </article>
 
-                        <article>
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/javascript-typescript.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Développement en JavaScript / TypeScript</h3>
+                            <p style="margin-bottom: 10px;">Projets Liés</p>
+                            <button class="btn" onclick="scrollToSection('projet10')">Revolver Reaper</button>
+                        </article>
+
+                        <article class="css_Article">
+                            <div class="thumb"><img src="images/Uniface.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>Base de Uniface</h3>
+                            <p style="margin-bottom: 10px;">Stage</p>
+                            <button class="btn" onclick="scrollToSection('projet10')">Proges Plus</button>
                         </article>
                     </div>
                 </section>
@@ -114,6 +132,21 @@
                 <section id="travaux" style="margin-top:18px">
                     <h2 style="font-size:20px;margin-bottom:12px">Projets récents</h2>
                     <div class="css_Articles">
+                        <article id="projet11" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Conception d'API REST</li><li>Architecture client-serveur</li><li>Gestion des requêtes HTTP et des ressources</li><li>Documentation de projet</li><li>Utilisation de GitLab et de Git</li></ul><strong>Mes points forts</strong><ul><li>Création d'un projet SAÉ dédié aux API REST</li><li>Organisation et structuration du code</li><li>Rédaction de documentation claire</li><li>Intégration d'outils de collaboration GitLab</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Choix des conventions REST et des endpoints</li><li>Gestion des données et des états</li><li>Test des routes et des comportements API</li><li>Rédaction du README pour un projet d'équipe</li></ul><strong>Mes points à améliorer</strong><ul><li>Ajouter une interface front-end pour tester l'API</li><li>Mettre en place l'authentification et la sécurité</li><li>Améliorer les tests automatisés</li><li>Documenter plus finement chaque endpoint</li></ul><strong>Conclusion</strong><p>Projet SAÉ REST fonctionnel, organisé autour d'une API et d'une bonne gestion de projet sur GitLab. Il montre une capacité à structurer et documenter un projet backend tout en respectant les bonnes pratiques REST.</p><p><strong>Lien GITHUB</strong><a href='https://github.com/Antique06/SAE_REST'>https://github.com/Antique06/SAE_REST</a></p>">
+                            <div class="thumb"><img src="images/rest.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+                            <h3>SAE REST</h3>
+                            <p>
+                                Projet d'une API REST développé dans le cadre d'une SAÉ,
+                                avec une structure GitLab et une documentation dédiée.
+                            </p>
+                            <button class="btn btn-more" onclick="openModal('projet11',
+                                                                   'SAE REST',
+                                                                   'images/SAE_REST.png',
+                                                                   'SAE REST est un projet consacré à la conception d\'une API REST et à l\'organisation d\'un projet sur GitLab. Le projet met en œuvre la structuration d\'endpoints, la gestion des requêtes HTTP, et la documentation des ressources. Il est orienté vers la création d\'un backend REST clair et maintenable.', document.getElementById('projet11').dataset.details)">
+                                                                   En savoir plus
+                            </button>
+                        </article>
+
                         <article id="projet10" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>JavaScript / HTML / CSS</li><li>Node.js &amp; Socket.io</li><li>Développement multijoueur en temps réel</li><li>Architecture client-serveur</li><li>Game Design et direction artistique</li></ul><strong>Mes points forts</strong><ul><li>Mise en place du système multijoueur fonctionnel</li><li>Communication client-serveur robuste via Socket.io</li><li>Direction artistique et univers far-west</li><li>Système de difficulté dynamique adaptable au score</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Configuration initiale du multijoueur avec Socket.io</li><li>Gestion des collisions et du redimensionnement d'écran</li><li>Équilibrage de la difficulté des ennemis</li></ul><strong>Mes points à améliorer</strong><ul><li>Meilleure gestion des collisions</li><li>Interface utilisateur responsive et adaptative</li><li>Modes solo et multijoueur sélectionnables</li><li>Plus de variété d'ennemis et de boss</li><li>Systèmes de bonus et améliorations supplémentaires</li><li>Plusieurs cartes de jeu</li></ul><strong>Conclusion</strong><p>Jeu multijoueur fonctionnel et attractif avec une direction artistique marquante. Le système de communication en temps réel fonctionne correctement et permet une expérience de jeu fluide. Fier de la qualité du rendu graphique et de l'expérience multijoueur.</p><p><strong>Lien GITHUB</strong><a href='https://github.com/Antique06/revolver-reaper'>https://github.com/Antique06/revolver-reaper</a></p>">
                             <div class="thumb"><img src="images/revolver-reaper.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Revolver Reaper</h3>
@@ -130,7 +163,7 @@
                             </button>
                         </article>
 
-                        <article id="projet9" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>Java</li><li>JavaFX</li><li>Développement efficace</li><li>Qualité du développement</li></ul><strong>Mes points forts</strong><ul><li>Programmation Java</li><li>Proposition d'idées pour les modes bonus</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Répartition du travail dans le temps</li><li>Compréhension du patron MVC</li></ul><strong>Mes points à améliorer</strong><ul><li>Ne pas réaliser ces idées d'un seul trait</li><li>Analyser à l'avance les patrons requis</li></ul><strong>Conclusion</strong><p>Jeu soigné et varié auquel notre groupe prend plaisir à jouer.</p><p><strong>Lien GITHUB</strong><a href='https://github.com/Antique06/Labyrinthe'>https://github.com/Antique06/Labyrinthe</a></p>">
+                        <article id="projet10" class="css_Article projet" data-details="<strong>Compétences techniques et savoir-faire</strong><ul><li>JavaScript / HTML / CSS</li><li>Node.js &amp; Socket.io</li><li>Développement multijoueur en temps réel</li><li>Architecture client-serveur</li><li>Game Design et direction artistique</li></ul><strong>Mes points forts</strong><ul><li>Mise en place du système multijoueur fonctionnel</li><li>Communication client-serveur robuste via Socket.io</li><li>Direction artistique et univers far-west</li><li>Système de difficulté dynamique adaptable au score</li></ul><strong>Mes difficultés dans la mise en œuvre du projet</strong><ul><li>Configuration initiale du multijoueur avec Socket.io</li><li>Gestion des collisions et du redimensionnement d'écran</li><li>Équilibrage de la difficulté des ennemis</li></ul><strong>Mes points à améliorer</strong><ul><li>Meilleure gestion des collisions</li><li>Interface utilisateur responsive et adaptative</li><li>Modes solo et multijoueur sélectionnables</li><li>Plus de variété d'ennemis et de boss</li><li>Systèmes de bonus et améliorations supplémentaires</li><li>Plusieurs cartes de jeu</li></ul><strong>Conclusion</strong><p>Jeu multijoueur fonctionnel et attractif avec une direction artistique marquante. Le système de communication en temps réel fonctionne correctement et permet une expérience de jeu fluide. Fier de la qualité du rendu graphique et de l'expérience multijoueur.</p><p><strong>Lien GITHUB</strong><a href='https://github.com/Antique06/revolver-reaper'>https://github.com/Antique06/revolver-reaper</a></p>">
                             <div class="thumb"><img src="images/MadMaze.png" alt="" style="width:100%;height:100%;object-fit:cover"></div>
                             <h3>Jeu de parcours et de création de labyrinthe</h3>
                             <p>
